@@ -1,0 +1,130 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 244, 244);
+  color: #333;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+small {
+  font-size: 1.3rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.title {
+  font-size: 4.9rem;
+  text-align: center;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+}
+
+.label {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 4.8rem;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 40px;
+  font-size: 2.4rem;
+  cursor: pointer;
+  -webkit-transition: background-color 250ms;
+  -o-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 786px) {
+  .form {
+    grid-template-columns: 0.075fr 0.8fr 0.1fr;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .input {
+    margin-bottom: 0;
+  }
+
+  .card {
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.75);
+    margin-left: 2.2rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    max-width: 10%;
+  }
+}
+
+.card-list {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.75);
+  margin-left: 2.2rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  max-width: 30%;
+}
+
+.card--title {
+  margin-bottom: 0.5rem;
+  font-size: 2.1rem;
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
